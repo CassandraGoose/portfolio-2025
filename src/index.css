@@ -50,3 +50,18 @@ div:has(> .collapsible-content) {
 div:has(> .collapsible-content:not(.open)) {
   border-bottom-width: 0;
 }
+
+@keyframes target-flash {
+  0%   { box-shadow: 0 0 0 0 transparent; }
+  8%   { box-shadow: 0 0 20px 6px rgba(167, 139, 250, 0.5); }
+  16%  { box-shadow: 0 0 0 0 transparent; }
+  25%  { box-shadow: 0 0 20px 6px rgba(167, 139, 250, 0.5); }
+  33%  { box-shadow: 0 0 0 0 transparent; }
+  42%  { box-shadow: 0 0 20px 6px rgba(167, 139, 250, 0.5); }
+  50%  { box-shadow: 0 0 0 0 transparent; }
+  100% { box-shadow: 0 0 0 0 transparent; }
+}
+
+div:has(> .collapsible-content):target {
+  animation: target-flash 1.8s ease-in-out;
+}
