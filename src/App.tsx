@@ -1,13 +1,13 @@
-import Intro from './components/IntroCard'
 import About from './components/AboutCard'
-import Skills from './components/SkillsCard'
-import Projects from './components/ProjectsCard'
-import PersonalProjects from './components/PersonalProjectsCard'
-import Work from './components/WorkCard'
-import Education from './components/EducationCard'
-import Volunteering from './components/VolunteeringCard'
+import Certifications from './components/Certifications';
 import Community from './components/CommunityCard'
-import Conferences from './components/ConferencesCard'
+import Education from './components/EducationCard'
+import Intro from './components/IntroCard'
+import PersonalProjects from './components/PersonalProjectsCard'
+import Projects from './components/ProjectsCard'
+import Skills from './components/SkillsCard'
+import Work from './components/WorkCard'
+import Volunteering from './components/VolunteeringCard'
 
 function App() {
   return (
@@ -25,10 +25,10 @@ function App() {
 
         <section className='lg:mx-4 lg:my-16 flex flex-col'>
           <Education />
+          <Certifications />
           <Volunteering />
           <Projects />
           <PersonalProjects />
-          <Conferences />
         </section>
       </main>
 

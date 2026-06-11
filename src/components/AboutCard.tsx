@@ -8,6 +8,7 @@ function AboutCard() {
           ABOUT ME
         </p>
       }
+      id="about"
       context={<p className="m-4">Hi, I'm Cass.</p>}
     >
       <div>

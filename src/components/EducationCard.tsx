@@ -8,6 +8,7 @@ function EducationCard() {
           EDUCATION
         </p>
       }
+      id="education"
       context={
         <h1 className="m-4">
           I love to learn. I won't bore you by listing all of the courses and
@@ -60,6 +61,11 @@ function EducationCard() {
             </p>
           </li>
         </ul>
+      </div>
+      <div className="flex justify-center align-center p-4">
+        <a href="#intro" className="px-3 underline hover:text-purple-400">
+          BACK TO TOP
+        </a>
       </div>
     </Card>
   );

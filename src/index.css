@@ -24,6 +24,11 @@ body {
   font-family: var(--font-mono);
 }
 
+html, body {
+  scroll-behavior: smooth;
+  scroll-padding-top: 16px;
+}
+
 .collapsible-content {
   display: grid;
   grid-template-rows: 0fr;
