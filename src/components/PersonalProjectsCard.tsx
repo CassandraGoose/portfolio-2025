@@ -1,0 +1,145 @@
+import Card from './Card'
+import ProjectDetails from './ProjectDetails'
+
+function PersonalProjectsCard() {
+  return (
+    <Card
+      nav={
+        <p className='border-r border-solid border-black justify-center px-4 flex items-center'>
+          PERSONAL PROJECTS
+        </p>
+      }
+      context={
+        <p className='m-4'>
+          I tend to build projects to learn something, instead of relying on
+          tutorials or guides. I think it helps me internalize concepts more
+          quickly.
+        </p>
+      }
+    >
+      <ul className='m-4'>
+        <ProjectDetails
+          title='Track: Learning System'
+          tech='Next.js, TypeScript, React, Node, Prisma, PostgreSQL, Vercel'
+        >
+          <p className='my-2 text-lg'>
+            This project was designed to help learners track their progress and
+            reach their goals. It can be difficult to know if you have mastered a
+            concept or not. This tool allows users to share objective-based
+            learning plans and resources and also track the courses and work they
+            have completed in order to better know if mastery or proficiency has
+            been achieved.
+          </p>
+        </ProjectDetails>
+        <ProjectDetails
+          title='Custom Metal Creations (Live site for working artist)'
+          tech='Vue, Tailwind, Vite, JavaScript, HTML, Vercel, Google Visutalization API, Google Sheets'
+        >
+          <p className='my-2 text-lg'>
+            This site acts as a portfolio site for the metal artist Terry
+            Lawrenz. I made some interesting choices here, so that the artist
+            could easily make updates with technology he was already comfortable
+            using. For example, instead of utilizing a CMS or a database, I have
+            data coming in from a Google Sheet. I'm hoping to improve the Largest
+            Contentful Paint, compress images, and generally improve the
+            performance of the application in the future.
+          </p>
+          <div className='flex pt-4 pb-8'>
+            <a
+              className='ml-4 px-4 border border-solid border-black flex justify-center items-center shadow-lg'
+              href='https://custommetalcreations.live/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Deployed Site
+            </a>
+            <a
+              className='mx-4 px-4 border border-solid border-black flex justify-center items-center shadow-lg'
+              href='https://github.com/CassandraGoose/custom-metal-creations-2023'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              GitHub
+            </a>
+          </div>
+        </ProjectDetails>
+        <ProjectDetails
+          title='Reported UFO Sightings, Visualized'
+          tech='D3.js, React, JavaScript, TypeScript, CSS, HTML, Vercel'
+        >
+          <p className='my-2 text-lg'>
+            Once upon a time, I was pretty dang good with D3 and worked on some
+            visualization applications for various companies. I'm really rusty,
+            so I wanted to get my chops back. This project is a playground to do
+            just that. Utilizing data from NUFORC's database of reported UFO
+            sightings, I am building various visualizations to tell a story about
+            the data. I hope to make the site responsive and accessible moving
+            forward, along with adding more charts.
+          </p>
+          <div className='flex pt-4 pb-8'>
+            <a
+              className='ml-4 px-4 border border-solid border-black flex justify-center items-center shadow-lg'
+              href='https://nuforc-ufo-reports-data-visualizations.vercel.app/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Deployed Site
+            </a>
+            <a
+              className='mx-4 px-4 border border-solid border-black flex justify-center items-center shadow-lg'
+              href='https://github.com/CassandraGoose/ufo-report-visualizations'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              GitHub
+            </a>
+          </div>
+        </ProjectDetails>
+        <ProjectDetails
+          title="Big Rico's Pizza (a Domino's Clone)"
+          tech='React, JavaScript, TypeScript, React Router, ESLint, TailwindCSS, Vite, Vercel'
+        >
+          <p className='my-2 text-lg'>
+            I really wanted to get proficient with TailwindCSS. I also haven't
+            built any complex CSS in a few years. So, I decided to make a
+            Domino's clone (based on Domino's October, 2023 website) so that I
+            could get comfortable with layouts, designs, etc. I need to fix a
+            couple of items, but ultimately, I think this site shows that I can
+            match a design quite well.
+          </p>
+          <div className='flex pt-4 pb-8'>
+            <a
+              className='ml-4 px-4 border border-solid border-black flex justify-center items-center shadow-lg'
+              href='https://big-ricos-pizza.vercel.app/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Deployed Site
+            </a>
+            <a
+              className='mx-4 px-4 border border-solid border-black flex justify-center items-center shadow-lg'
+              href='https://github.com/CassandraGoose/big-ricos-pizza'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              GitHub
+            </a>
+          </div>
+        </ProjectDetails>
+        <ProjectDetails
+          title='2D Unity RPG Game'
+          tech='C#, Unity'
+        >
+          <p className='my-2 text-lg'>
+            Through my LLC Sweet Pig Studio, ltd., I am building a 2D RPG game
+            and also designing all the assets. I'll add details here closer to
+            when I release the game.
+          </p>
+          <div className='flex pt-4 pb-8' />
+        </ProjectDetails>
+      </ul>
+    </Card>
+  )
+}
+
+export default PersonalProjectsCard

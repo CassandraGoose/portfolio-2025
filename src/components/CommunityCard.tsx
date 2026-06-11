@@ -1,0 +1,73 @@
+import Card from './Card'
+import ListItemLink from './ListItemLink'
+
+function CommunityCard() {
+  return (
+    <Card
+      nav={
+        <p className='border-r border-solid border-black justify-center px-4 flex items-center'>
+          COMMUNITY
+        </p>
+      }
+      context={
+        <h1 className='m-4'>
+          I believe in the Denver community! I co-organize the DenverScript
+          Meetup, get involved with other meetups and events, and give talks
+          whenever I can.
+        </h1>
+      }
+    >
+      <div className='m-4 list-disc'>
+        <ul className='m-4 list-disc'>
+          <ListItemLink
+            title='Meetup Talks? In this economy? (Yeah, and here&rsquo;s how you can start)'
+            date='March, 2025'
+            link='https://www.youtube.com/live/_JDHxsgIwz4?si=BcpRgn4gcTtDqt0A&t=652'
+          />
+          <ListItemLink
+            title='What is the Serverless Framework Anyways?'
+            date='September, 2021'
+            link='https://www.meetup.com/DenverScript/events/dzlpnsyccmblc/'
+          />
+          <ListItemLink
+            title='React and the Paradox of Choice'
+            date='July, 2021'
+            link='https://www.meetup.com/DenverScript/events/schtzrycckbkc/'
+          />
+          <ListItemLink
+            title='Front End Showdown - Vue'
+            date='April, 2021'
+            link='https://www.meetup.com/node-js-denver-boulder/events/ktpcnryccgbtb/'
+          />
+          <ListItemLink
+            title='Build a Chart with Vue-centric D3'
+            date='March, 2020'
+            link='https://www.meetup.com/Denver-Vue-js-Meetup/events/wpwwnrybcfbfc/'
+          />
+          <ListItemLink
+            title='Front End Showdown - Vue'
+            date='September, 2019'
+            link='https://www.youtube.com/watch?v=-cL_z-Z1mcU'
+          />
+          <ListItemLink
+            title="It's a Beautiful Day in the Neighborhood"
+            date='August, 2019'
+            link='https://twitter.com/dvlpdnvr/status/1154522975665659908?s=20'
+          />
+          <ListItemLink
+            title='Vue Slots in 8 Minutes or Less (Also given at DVLP DNVR 2019)'
+            date='July, 2019'
+            link='https://www.meetup.com/Denver-Vue-js-Meetup/events/ltwpwmyzkbdc/'
+          />
+          <ListItemLink
+            title='On Transitioning Into Web Development and Being a Noob Again'
+            date='October, 2018'
+            link='https://youtu.be/XUvXb3393ZY'
+          />
+        </ul>
+      </div>
+    </Card>
+  )
+}
+
+export default CommunityCard

@@ -1,0 +1,118 @@
+import Card from './Card'
+import ProjectDetails from './ProjectDetails'
+
+function ProjectsCard() {
+  return (
+    <Card
+      nav={
+        <p className='border-r border-solid border-black justify-center px-4 flex items-center'>
+          PRODUCTION APPLICATIONS
+        </p>
+      }
+      context={
+        <p className='m-4'>
+          I have had the opportunity to work on several production applications
+          in my career. I have worked for product companies and also worked for a
+          consultancy, where I worked on various teams and with various
+          technologies.
+        </p>
+      }
+    >
+      <ul className='m-4'>
+        <ProjectDetails
+          title='Physical Location Personel Management System Dashboard'
+          tech='TypeScript, React, MUI, Vite, Axios, Zod, Sentry, React Testing Library, Playwright'
+        >
+          <p className='my-2 text-lg'>
+            I delivered the bulk of the functionality as the only front end
+            developer on the team, which was tasked with creating a dashboard for
+            users to explore logs and edit personel. While the functionality was
+            largely CRUD-based, I had to make decisions to not only ensure the
+            longevity of the code but also deliver on-pace with expected
+            deadlines, which were extremely tight. I balanced delivering quick
+            features with testing, performance, security, and error tracking.
+          </p>
+        </ProjectDetails>
+        <ProjectDetails
+          title='Insurance Mental Health Provider Finder'
+          tech='React, MUI, Node, Express, Objection.js, Sequelize, MSSQL, MapBox, Mocha, Chai, React Testing Library'
+        >
+          <p className='my-2 text-lg'>
+            I worked on a team of 2 developers, one product manager, and mental
+            health staff from the client company to create a wizard style
+            application to quickly allow users to access mental health
+            assistance, particularly during crisis events. This full-stack
+            application allowed for users to directly communicate with potential
+            providers, book appointments, and find care. This project was HIPAA
+            compliant.
+          </p>
+          <p className='my-2 text-lg'>
+            As one of two developers, I was challenged with delivering much of
+            the functionality which involved interfacing with the client company
+            APIs and SMTP. I utilized JSS to style the application according to
+            the client company's design specs. I often paired with the other
+            developer on particularly challenging sections of the application and
+            we reviewed each other's code. I continually delivered my stories
+            fully tested and cleaned on time for each sprint. I also got the
+            opportunity to not only present my work to the clients every sprint,
+            but also brainstorm with the clients to uncover the features their
+            users needed.
+          </p>
+        </ProjectDetails>
+        <ProjectDetails
+          title='Higher Education Career Finder and College Readiness Tracker'
+          tech='React, JSS, Node, TypeScript, Express, Objection.js, Sequelize, PostgreSQL, Cypress, Mocha, Chai, AWS Ecosystem, AWS Cognito'
+        >
+          <p className='my-2 text-lg'>
+            I acted as a tech lead for a team of 4 developers, one product
+            manager, and the client company to create a wizard style career
+            finder which utilized a psychology-based algorithm to match users to
+            a set of careers. This application also contained a tracker for high
+            school students to prepare for college.
+          </p>
+          <p className='my-2 text-lg'>
+            I was tasked with reviewing code from the other 3 developers, acting
+            as architect, completing features, and mentoring the other
+            developers. I continually identified and fixed issues and worked to
+            future-proof the application. I implemented continuous integration
+            and deployment for this project, as well. I inherited this
+            application in its early life and identified some security issues and
+            also noted that the API was not RESTful. After creating a refactor
+            proposal and presenting it to stakeholders, the team spent 2 sprints
+            fixing the vulnerabilities and set the application up so that future
+            work would be much more seamless and fast.
+          </p>
+        </ProjectDetails>
+        <ProjectDetails
+          title='Law Enforcement and Prosecution Visualization and Charting'
+          tech='Vue, Vuex, D3, Serverless, Vue Test Utils, AWS Ecosystem'
+        >
+          <p className='my-2 text-lg'>
+            I worked on the R&D team with 3 other developers and a project
+            manager to construct a graphical application to allow law enforcement
+            officers and prosecution teams to create visual aids based on
+            investigation and case data.
+          </p>
+          <p className='my-2 text-lg'>
+            We worked closely with a group of users to design helpful tooling and
+            address unexpected issues. We pushed the boundaries of browser
+            capabilities to render large amounts of data in helpful ways and
+            perform calculations in a serverless situation.
+          </p>
+        </ProjectDetails>
+        <ProjectDetails
+          title='Building Efficiency Graphing Tool'
+          tech='Vue, Vuex, D3, Karma'
+        >
+          <p className='my-2 text-lg'>
+            This tool consumed the client's API in order to display data
+            regarding heating, cooling, efficiency, charging usage, and parking
+            spaces for a campus.
+          </p>
+        </ProjectDetails>
+      </ul>
+    </Card>
+  )
+}
+
+export default ProjectsCard

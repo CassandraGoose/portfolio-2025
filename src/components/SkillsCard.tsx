@@ -1,0 +1,99 @@
+import Card from './Card'
+import SkillList from './SkillList'
+
+const FRONT_END_SKILLS = [
+  'JavaScript',
+  'TypeScript',
+  'HTML',
+  'CSS',
+  'SASS/SCSS',
+  'React',
+  'Vue',
+  'Next.js',
+  'React Router',
+  'Vue Router',
+  'Redux',
+  'Vuex',
+  'JSX',
+  'Tailwind',
+  'JSS',
+  'MUI',
+  'Vuetify',
+  'Bootstrap',
+  'Buefy',
+]
+
+const BACK_END_SKILLS = [
+  'Node',
+  'TypeScript',
+  'Express',
+  'TypeORM',
+  'Objection.js',
+  'Knex.js',
+  'Prisma',
+  'Drizzle',
+]
+
+const TESTING_SKILLS = [
+  'Jest',
+  'Cypress',
+  'Mocha / Chai',
+  'React Testing Library',
+  'Vue Test Utils',
+]
+
+const DB_SKILLS = ['PostgreSQL', 'MSSQL']
+
+const CLOUD_SKILLS = [
+  'Serverless',
+  'Heroku',
+  'Vercel',
+  'AWS - RDS',
+  'AWS - Lambda',
+  'AWS - VPC',
+  'AWS - S3',
+  'AWS - API Gateway',
+  'AWS - Cognito',
+  'CircleCI',
+]
+
+const TOOLS_SKILLS = [
+  'Git',
+  'Webpack',
+  'Vite',
+  'GitHub',
+  'BitBucket',
+  'Jira',
+  'GitHub Projects',
+  'Cursor',
+  'ChatGPT',
+]
+
+const TECHNIQUE_SKILLS = ['Agile', 'Pair Programming']
+
+const RUSTY_SKILLS = ['C#', 'jQuery', 'Unity', 'D3', 'AngularJS', 'Java', 'Python', 'C']
+
+function SkillsCard() {
+  return (
+    <Card
+      nav={
+        <p className='border-r border-solid border-black justify-center px-4 flex items-center'>
+          SKILLS
+        </p>
+      }
+    >
+      <ul className='columns-2'>
+        <SkillList title='Front End' skills={FRONT_END_SKILLS} />
+        <SkillList title='Back End' skills={BACK_END_SKILLS} />
+        <SkillList title='Databases' skills={DB_SKILLS} />
+        <SkillList title='Testing' skills={TESTING_SKILLS} />
+        <SkillList title='Cloud & Deployment' skills={CLOUD_SKILLS} />
+        <SkillList title='Tools' skills={TOOLS_SKILLS} />
+        <SkillList title='Techniques' skills={TECHNIQUE_SKILLS} />
+        <SkillList title='Rusty & Learning' skills={RUSTY_SKILLS} />
+      </ul>
+    </Card>
+  )
+}
+
+export default SkillsCard
