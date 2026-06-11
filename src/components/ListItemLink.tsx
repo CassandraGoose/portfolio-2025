@@ -8,7 +8,7 @@ function ListItemLink({ title, date, link }: ListItemLinkProps) {
   return (
     <li className='ml-4 mb-4'>
       <a
-        className='italic text-stone-500 hover:text-stone-600'
+        className='italic text-stone-500 hover:text-purple-400'
         href={link}
         target='_blank'
         rel='noopener noreferrer'

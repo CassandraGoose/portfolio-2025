@@ -1,5 +1,6 @@
 import Card from "./Card";
 import SkillList from "./SkillList";
+import LinkButton from "./LinkButton";
 
 const FRONT_END_SKILLS = [
   "JavaScript",
@@ -103,9 +104,7 @@ function SkillsCard() {
         <SkillList title="Rusty & Learning" skills={RUSTY_SKILLS} />
       </ul>
       <div className="flex justify-center align-center p-4">
-        <a href="#intro" className="px-3 underline hover:text-purple-400">
-          BACK TO TOP
-        </a>
+        <LinkButton href="#nav">BACK TO TOP</LinkButton>
       </div>
     </Card>
   );

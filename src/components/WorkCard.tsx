@@ -1,4 +1,5 @@
 import Card from "./Card";
+import LinkButton from "./LinkButton";
 
 function WorkCard() {
   return (
@@ -44,9 +45,7 @@ function WorkCard() {
         </li>
       </ul>
       <div className="flex justify-center align-center p-4">
-        <a href="#intro" className="px-3 underline hover:text-purple-400">
-          BACK TO TOP
-        </a>
+        <LinkButton href="#nav">BACK TO TOP</LinkButton>
       </div>
     </Card>
   );

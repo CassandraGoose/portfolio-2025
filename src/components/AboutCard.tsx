@@ -1,4 +1,5 @@
 import Card from "./Card";
+import LinkButton from "./LinkButton";
 
 function AboutCard() {
   return (
@@ -24,22 +25,12 @@ function AboutCard() {
           Application Security Engineer.
         </p>
         <div className="flex pt-4 pb-8">
-          <a
-            className="ml-4 px-4 border border-solid border-black flex justify-center items-center shadow-lg"
-            href="https://github.com/CassandraGoose"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <LinkButton href="https://github.com/CassandraGoose" external className="ml-4">
             GitHub
-          </a>
-          <a
-            className="mx-4 px-4 border border-solid border-black flex justify-center items-center shadow-lg"
-            href="https://www.linkedin.com/in/cassandra-rt/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          </LinkButton>
+          <LinkButton href="https://www.linkedin.com/in/cassandra-rt/" external className="ml-4">
             LinkedIn
-          </a>
+          </LinkButton>
         </div>
       </div>
     </Card>
