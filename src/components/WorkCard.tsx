@@ -36,6 +36,9 @@ function WorkCard() {
           <p className='italic'>Full Stack Resident Instructor</p>
           <p className='text-lg'>April 2017 - February 2018</p>
         </li>
+        <li className='ml-4 mt-4'>
+          <p className='italic'>Previous work experience available upon request.</p>
+        </li>
       </ul>
     </Card>
   )

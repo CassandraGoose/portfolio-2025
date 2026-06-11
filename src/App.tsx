@@ -7,6 +7,7 @@ import Work from './components/WorkCard'
 import Education from './components/EducationCard'
 import Volunteering from './components/VolunteeringCard'
 import Community from './components/CommunityCard'
+import Conferences from './components/ConferencesCard'
 
 function App() {
   return (
@@ -16,17 +17,18 @@ function App() {
           <Intro />
           <section>
             <About />
+            <Work />
             <Skills />
             <Community />
-            <Education />
           </section>
         </div>
 
         <section className='lg:mx-4 lg:my-16 flex flex-col'>
-          <Work />
+          <Education />
           <Volunteering />
           <Projects />
           <PersonalProjects />
+          <Conferences />
         </section>
       </main>
 
