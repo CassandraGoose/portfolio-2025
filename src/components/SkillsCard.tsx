@@ -77,7 +77,7 @@ function SkillsCard() {
   return (
     <Card
       nav={
-        <p className='border-r border-solid border-black justify-center px-4 flex items-center'>
+        <p className='border-l-4 border-solid border-black justify-center px-4 flex items-center'>
           SKILLS
         </p>
       }

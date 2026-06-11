@@ -37,3 +37,11 @@ body {
 .collapsible-content > div {
   overflow: hidden;
 }
+
+div:has(> .collapsible-content) {
+  transition: border-bottom-width 0.5s ease-in-out;
+}
+
+div:has(> .collapsible-content:not(.open)) {
+  border-bottom-width: 0;
+}

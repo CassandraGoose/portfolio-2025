@@ -4,8 +4,8 @@ function AboutCard() {
   return (
     <Card
       nav={
-        <p className="border-r border-solid border-black justify-center px-4 flex items-center">
-          ABOUT
+        <p className="border-l-4 border-solid border-black justify-center px-4 flex items-center">
+          ABOUT ME
         </p>
       }
       context={<p className="m-4">Hi, I'm Cass.</p>}
