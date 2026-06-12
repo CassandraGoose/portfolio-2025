@@ -11,7 +11,7 @@ function LinkButton({ href, children, external = false, className = "" }: LinkBu
   return (
     <a
       href={href}
-      className={`px-4 border border-solid border-black flex justify-center items-center shadow-lg hover:bg-purple-300 ${className}`}
+      className={`border-b-2 border-dotted p-2 hover:bg-purple-300 ${className}`}
       {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
     >
       {children}

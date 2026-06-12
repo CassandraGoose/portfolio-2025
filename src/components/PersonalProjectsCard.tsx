@@ -47,22 +47,20 @@ function PersonalProjectsCard() {
             performance of the application in the future.
           </p>
           <div className="flex pt-4 pb-8">
-            <a
-              className="ml-4 px-4 border border-solid border-black flex justify-center items-center shadow-lg"
+            <LinkButton
               href="https://custommetalcreations.live/"
-              target="_blank"
-              rel="noopener noreferrer"
+              external
+              className="ml-4"
             >
               Deployed Site
-            </a>
-            <a
-              className="mx-4 px-4 border border-solid border-black flex justify-center items-center shadow-lg"
+            </LinkButton>
+            <LinkButton
               href="https://github.com/CassandraGoose/custom-metal-creations-2023"
-              target="_blank"
-              rel="noopener noreferrer"
+              external
+              className="ml-4"
             >
-              GitHub
-            </a>
+              Deployed Site
+            </LinkButton>
           </div>
         </ProjectDetails>
         <ProjectDetails
@@ -79,22 +77,20 @@ function PersonalProjectsCard() {
             moving forward, along with adding more charts.
           </p>
           <div className="flex pt-4 pb-8">
-            <a
-              className="ml-4 px-4 border border-solid border-black flex justify-center items-center shadow-lg"
+            <LinkButton
               href="https://nuforc-ufo-reports-data-visualizations.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
+              external
+              className="ml-4"
             >
               Deployed Site
-            </a>
-            <a
-              className="mx-4 px-4 border border-solid border-black flex justify-center items-center shadow-lg"
+            </LinkButton>
+            <LinkButton
               href="https://github.com/CassandraGoose/ufo-report-visualizations"
-              target="_blank"
-              rel="noopener noreferrer"
+              external
+              className="ml-4"
             >
-              GitHub
-            </a>
+              Deployed Site
+            </LinkButton>
           </div>
         </ProjectDetails>
         <ProjectDetails
@@ -110,22 +106,21 @@ function PersonalProjectsCard() {
             match a design quite well.
           </p>
           <div className="flex pt-4 pb-8">
-            <a
-              className="ml-4 px-4 border border-solid border-black flex justify-center items-center shadow-lg"
+          
+            <LinkButton
               href="https://big-ricos-pizza.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
+              external
+              className="ml-4"
             >
               Deployed Site
-            </a>
-            <a
-              className="mx-4 px-4 border border-solid border-black flex justify-center items-center shadow-lg"
+            </LinkButton>
+            <LinkButton
               href="https://github.com/CassandraGoose/big-ricos-pizza"
-              target="_blank"
-              rel="noopener noreferrer"
+              external
+              className="ml-4"
             >
-              GitHub
-            </a>
+              Deployed Site
+            </LinkButton>
           </div>
         </ProjectDetails>
         <ProjectDetails title="2D Unity RPG Game" tech="C#, Unity">
