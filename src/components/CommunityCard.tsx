@@ -1,5 +1,4 @@
 import Card from "./Card";
-import ListItemLink from "./ListItemLink";
 import LinkButton from "./LinkButton";
 
 function CommunityCard() {

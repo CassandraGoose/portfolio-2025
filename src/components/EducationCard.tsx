@@ -1,5 +1,6 @@
 import Card from "./Card";
 import LinkButton from "./LinkButton";
+import ListItemCard from "./ListItemCard";
 
 function EducationCard() {
   return (
@@ -18,12 +19,11 @@ function EducationCard() {
       }
     >
       <div className="m-4">
-        <p className="font-bold">Formal Education</p>
-        <ul className="m-4 list-disc">
-          <li className="ml-4 mb-4">
-            <p className="italic">B.S. in Software Engineering: 2025-2026</p>
-            <p className="text-lg">Western Governor's University</p>
-            <hr />
+        <ul className="m-4 list-none flex flex-col gap-4">
+          <ListItemCard
+            title="B.S. in Software Engineering"
+            subtitle="Western Governor's University, 2025-2026"
+          >
             <p>
               Regardless of my work history, hiring someone without a technical
               degree is a risk some companies will not make. To mitigate that
@@ -33,25 +33,23 @@ function EducationCard() {
               exemplary marks on my assessments. This university does not allow
               for differentiated honors when graduating.
             </p>
-          </li>
-          <li className="ml-4 mb-4">
-            <p className="italic">Web Development Certificate: 2016-2017</p>
-            <p className="text-lg">Galvanize - Web Development Immersive</p>
-            <hr />
+          </ListItemCard>
+          <ListItemCard
+            title="Web Development Certificate"
+            subtitle="Galvanize - Web Development Immersive, 2016-2017"
+          >
             <p>
-              I spent six months spent actively learning with peers covering
+              I spent six months actively learning with peers covering
               JavaScript, Node.js, AngularJS, Node.js, SQL, PostgreSQL, and
               more. I want to be clear that this was not a couple of hours a day
               sitting in a chair and zoning out. I had my hands on a keyboard
               for well over 8 hours every day, including weekends.
             </p>
-          </li>
-          <li className="ml-4 mb-4">
-            <p className="italic">
-              Bachelor of Music Education, summa cum laude: 2009-2014
-            </p>
-            <p className="text-lg">University of Northern Colorado</p>
-            <hr />
+          </ListItemCard>
+          <ListItemCard
+            title="Bachelor of Music Education"
+            subtitle="University of Northern Colorado, 2009-2014"
+          >
             <p>
               I graduated with highest honors and landed on the Dean's List
               every single semester. I won the Angie Southard Music Aware with
@@ -60,7 +58,7 @@ function EducationCard() {
               the Bands Librarian, ensuring over 5 full ensembles, totalling
               hundreds of students, had the appropriate music at all times.
             </p>
-          </li>
+          </ListItemCard>
         </ul>
       </div>
       <div className="flex justify-center align-center p-4">

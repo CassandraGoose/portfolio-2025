@@ -1,6 +1,6 @@
 import Card from "./Card";
-import ProjectDetails from "./ProjectDetails";
 import LinkButton from "./LinkButton";
+import ListItemCard from "./ListItemCard";
 
 function PersonalProjectsCard() {
   return (
@@ -19,10 +19,10 @@ function PersonalProjectsCard() {
         </p>
       }
     >
-      <ul className="m-4">
-        <ProjectDetails
+      <ul className="m-4 flex flex-col gap-4">
+        <ListItemCard
           title="Track: Learning System"
-          tech="Next.js, TypeScript, React, Node, Prisma, PostgreSQL, Vercel"
+          subtitle="Next.js, TypeScript, React, Node, Prisma, PostgreSQL, Vercel"
         >
           <p className="my-2 text-lg">
             This project was designed to help learners track their progress and
@@ -32,10 +32,10 @@ function PersonalProjectsCard() {
             they have completed in order to better know if mastery or
             proficiency has been achieved.
           </p>
-        </ProjectDetails>
-        <ProjectDetails
+        </ListItemCard>
+        <ListItemCard
           title="Custom Metal Creations (Live site for working artist)"
-          tech="Vue, Tailwind, Vite, JavaScript, HTML, Vercel, Google Visutalization API, Google Sheets"
+          subtitle="Vue, Tailwind, Vite, JavaScript, HTML, Vercel, Google Visutalization API, Google Sheets"
         >
           <p className="my-2 text-lg">
             This site acts as a portfolio site for the metal artist Terry
@@ -62,10 +62,10 @@ function PersonalProjectsCard() {
               Deployed Site
             </LinkButton>
           </div>
-        </ProjectDetails>
-        <ProjectDetails
+        </ListItemCard>
+        <ListItemCard
           title="Reported UFO Sightings, Visualized"
-          tech="D3.js, React, JavaScript, TypeScript, CSS, HTML, Vercel"
+          subtitle="D3.js, React, JavaScript, TypeScript, CSS, HTML, Vercel"
         >
           <p className="my-2 text-lg">
             Once upon a time, I was pretty dang good with D3 and worked on some
@@ -92,45 +92,14 @@ function PersonalProjectsCard() {
               Deployed Site
             </LinkButton>
           </div>
-        </ProjectDetails>
-        <ProjectDetails
-          title="Big Rico's Pizza (a Domino's Clone)"
-          tech="React, JavaScript, TypeScript, React Router, ESLint, TailwindCSS, Vite, Vercel"
-        >
-          <p className="my-2 text-lg">
-            I really wanted to get proficient with TailwindCSS. I also haven't
-            built any complex CSS in a few years. So, I decided to make a
-            Domino's clone (based on Domino's October, 2023 website) so that I
-            could get comfortable with layouts, designs, etc. I need to fix a
-            couple of items, but ultimately, I think this site shows that I can
-            match a design quite well.
-          </p>
-          <div className="flex pt-4 pb-8">
-          
-            <LinkButton
-              href="https://big-ricos-pizza.vercel.app/"
-              external
-              className="ml-4"
-            >
-              Deployed Site
-            </LinkButton>
-            <LinkButton
-              href="https://github.com/CassandraGoose/big-ricos-pizza"
-              external
-              className="ml-4"
-            >
-              Deployed Site
-            </LinkButton>
-          </div>
-        </ProjectDetails>
-        <ProjectDetails title="2D Unity RPG Game" tech="C#, Unity">
+        </ListItemCard>
+        <ListItemCard title="2D Unity RPG Game" subtitle="C#, Unity">
           <p className="my-2 text-lg">
             Through my LLC Sweet Pig Studio, ltd., I am building a 2D RPG game
             and also designing all the assets. I'll add details here closer to
             when I release the game.
           </p>
-          <div className="flex pt-4 pb-8" />
-        </ProjectDetails>
+        </ListItemCard>
       </ul>
       <div className="flex justify-center align-center p-4">
         <LinkButton href="#nav">BACK TO TOP</LinkButton>

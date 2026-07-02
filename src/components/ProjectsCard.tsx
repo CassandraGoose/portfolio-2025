@@ -1,6 +1,6 @@
 import Card from "./Card";
-import ProjectDetails from "./ProjectDetails";
 import LinkButton from "./LinkButton";
+import ListItemCard from "./ListItemCard";
 
 function ProjectsCard() {
   return (
@@ -20,10 +20,10 @@ function ProjectsCard() {
         </p>
       }
     >
-      <ul className="m-4">
-        <ProjectDetails
+      <ul className="m-4 flex flex-col gap-4">
+        <ListItemCard
           title="Physical Location Personel Management System Dashboard"
-          tech="TypeScript, React, MUI, Vite, Axios, Zod, Sentry, React Testing Library, Playwright"
+          subtitle="TypeScript, React, MUI, Vite, Axios, Zod, Sentry, React Testing Library, Playwright"
         >
           <p className="my-2 text-lg">
             I delivered the bulk of the functionality as the only front end
@@ -34,11 +34,12 @@ function ProjectsCard() {
             deadlines, which were extremely tight. I balanced delivering quick
             features with testing, performance, security, and error tracking.
           </p>
-        </ProjectDetails>
-        <ProjectDetails
+        </ListItemCard>
+        <ListItemCard
           title="Insurance Mental Health Provider Finder"
-          tech="React, MUI, Node, Express, Objection.js, Sequelize, MSSQL, MapBox, Mocha, Chai, React Testing Library"
+          subtitle="React, MUI, Node, Express, Objection.js, Sequelize, MSSQL, MapBox, Mocha, Chai, React Testing Library"
         >
+          {" "}
           <p className="my-2 text-lg">
             I worked on a team of 2 developers, one product manager, and mental
             health staff from the client company to create a wizard style
@@ -60,10 +61,10 @@ function ProjectsCard() {
             sprint, but also brainstorm with the clients to uncover the features
             their users needed.
           </p>
-        </ProjectDetails>
-        <ProjectDetails
+        </ListItemCard>
+        <ListItemCard
           title="Higher Education Career Finder and College Readiness Tracker"
-          tech="React, JSS, Node, TypeScript, Express, Objection.js, Sequelize, PostgreSQL, Cypress, Mocha, Chai, AWS Ecosystem, AWS Cognito"
+          subtitle="React, JSS, Node, TypeScript, Express, Objection.js, Sequelize, PostgreSQL, Cypress, Mocha, Chai, AWS Ecosystem, AWS Cognito"
         >
           <p className="my-2 text-lg">
             I acted as a tech lead for a team of 4 developers, one product
@@ -84,11 +85,12 @@ function ProjectsCard() {
             2 sprints fixing the vulnerabilities and set the application up so
             that future work would be much more seamless and fast.
           </p>
-        </ProjectDetails>
-        <ProjectDetails
+        </ListItemCard>
+        <ListItemCard
           title="Law Enforcement and Prosecution Visualization and Charting"
-          tech="Vue, Vuex, D3, Serverless, Vue Test Utils, AWS Ecosystem"
+          subtitle="Vue, Vuex, D3, Serverless, Vue Test Utils, AWS Ecosystem"
         >
+          {" "}
           <p className="my-2 text-lg">
             I worked on the R&D team with 3 other developers and a project
             manager to construct a graphical application to allow law
@@ -101,17 +103,18 @@ function ProjectsCard() {
             capabilities to render large amounts of data in helpful ways and
             perform calculations in a serverless situation.
           </p>
-        </ProjectDetails>
-        <ProjectDetails
+        </ListItemCard>
+        <ListItemCard
           title="Building Efficiency Graphing Tool"
-          tech="Vue, Vuex, D3, Karma"
+          subtitle="Vue, Vuex, D3, Karma"
         >
+          {" "}
           <p className="my-2 text-lg">
             This tool consumed the client's API in order to display data
             regarding heating, cooling, efficiency, charging usage, and parking
             spaces for a campus.
           </p>
-        </ProjectDetails>
+        </ListItemCard>
       </ul>
       <div className="flex justify-center align-center p-4">
         <LinkButton href="#nav">BACK TO TOP</LinkButton>
