@@ -2,106 +2,85 @@ import Card from "./Card";
 import SkillList from "./SkillList";
 import LinkButton from "./LinkButton";
 
-const FRONT_END_SKILLS = [
+const LANGUAGES_FRAMEWORKS_LIBRARIES_SKILLS = [
+  "(In order of importance?)",
   "JavaScript",
   "TypeScript",
+  "Java",
+  "Spring",
+  "Node",
+  "SQL",
+  "Express",
+  "Hono",
   "HTML",
   "CSS",
   "SASS/SCSS",
+  "Angular",
   "React",
   "Vue",
+  "Python",
+  "C",
   "Next.js",
-  "React Router",
-  "Vue Router",
-  "Redux",
-  "Vuex",
-  "JSX",
-  "Tailwind",
-  "JSS",
-  "MUI",
-  "Vuetify",
-  "Bootstrap",
-  "Buefy",
+  "PostgreSQL",
+  "MSSQL",
+  "Countless Testing Libraries, ORMs, Query Builders, CSS Libraries, State Management Libraries, and more."
 ];
 
-const BACK_END_SKILLS = [
-  "Node",
-  "TypeScript",
-  "Express",
-  "TypeORM",
-  "Objection.js",
-  "Knex.js",
-  "Prisma",
-  "Drizzle",
-];
-
-const TESTING_SKILLS = [
-  "Jest",
-  "Cypress",
-  "Mocha / Chai",
-  "React Testing Library",
-  "Vue Test Utils",
-];
-
-const DB_SKILLS = ["PostgreSQL", "MSSQL"];
+const PROGRAMMING_SKILLS = [
+  'Can code without AI',
+  'Can also code with AI',
+  'Code Review',
+  'CI/CD', 
+  'Version Control',
+  'Deployment',
+  'Systems Design',
+]
 
 const CLOUD_SKILLS = [
   "Serverless",
   "Heroku",
   "Vercel",
-  "AWS - RDS",
-  "AWS - Lambda",
-  "AWS - VPC",
-  "AWS - S3",
-  "AWS - API Gateway",
-  "AWS - Cognito",
-  "CircleCI",
+  "AWS Ecosystem (Certified Cloud Practioner + 3-5 years experience)"
 ];
 
-const TOOLS_SKILLS = [
+const PROGRAMMING_TOOLS_SKILLS = [
   "Git",
   "Webpack",
   "Vite",
   "GitHub",
+  "GitLab",
   "BitBucket",
   "Jira",
   "GitHub Projects",
+  "OpenCode",
+  "Gemini",
+  "Claude",
   "Cursor",
   "ChatGPT",
 ];
 
-const TECHNIQUE_SKILLS = ["Agile", "Pair Programming"];
+const TECHNIQUE_SKILLS = ["Agile", "Pair Programming", "Governance & Management"];
 
-const RUSTY_SKILLS = [
-  "C#",
-  "jQuery",
-  "Unity",
-  "D3",
-  "AngularJS",
-  "Java",
-  "Python",
-  "C",
-];
+const SECURITY_SKILLS = ['General Security Practices (CompTIA Security+ Certification)', 'SAST', 'DAST', 'Threat Modeling', 'Web Exploitation (CWES Certified)', 'Burp Suite', 'Linux', 'OWASP ZAP'];
 
 function SkillsCard() {
   return (
     <Card
       nav={
         <p className="border-l-4 border-solid border-black justify-center px-4 flex items-center">
-          SKILLS
+          TOOLS/SKILLS/PRACTICES
         </p>
       }
       id="skills"
     >
+      <p className="p-4 px-8">These items are organized so that the items I feel are most important are at the top.</p>
       <ul className="columns-2">
-        <SkillList title="Front End" skills={FRONT_END_SKILLS} />
-        <SkillList title="Back End" skills={BACK_END_SKILLS} />
-        <SkillList title="Databases" skills={DB_SKILLS} />
-        <SkillList title="Testing" skills={TESTING_SKILLS} />
-        <SkillList title="Cloud & Deployment" skills={CLOUD_SKILLS} />
-        <SkillList title="Tools" skills={TOOLS_SKILLS} />
-        <SkillList title="Techniques" skills={TECHNIQUE_SKILLS} />
-        <SkillList title="Rusty & Learning" skills={RUSTY_SKILLS} />
+        <SkillList title="Security Skills + Tools" skills={SECURITY_SKILLS} />
+        <SkillList title="Languages, Frameworks, & Libraries" skills={LANGUAGES_FRAMEWORKS_LIBRARIES_SKILLS} />
+        <SkillList title="Cloud" skills={CLOUD_SKILLS} />
+                <SkillList title="Programming Skills" skills={PROGRAMMING_SKILLS} />
+        <SkillList title="Programming Tools" skills={PROGRAMMING_TOOLS_SKILLS} />
+        <SkillList title="Processes" skills={TECHNIQUE_SKILLS} />
       </ul>
       <div className="flex justify-center align-center p-4">
         <LinkButton href="#nav">BACK TO TOP</LinkButton>
