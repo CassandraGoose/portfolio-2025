@@ -14,7 +14,7 @@ function VolunteeringCard() {
       <ul className="m-4 list-disc">
         <li className="ml-4">
           <p className="italic">DenverScript - MeetUp Co-organizer</p>
-          <p className="text-lg">2023-current</p>
+          <p className="text-lg">2023-2026</p>
         </li>
         <li className="ml-4 mt-4">
           <p className="italic">

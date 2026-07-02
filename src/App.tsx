@@ -1,6 +1,7 @@
 import About from "./components/AboutCard";
 import Certifications from "./components/Certifications";
 import Community from "./components/CommunityCard";
+import Conferences from "./components/ConferenceCard";
 import Education from "./components/EducationCard";
 import Intro from "./components/IntroCard";
 import NavCard from "./components/NavCard";
@@ -22,6 +23,7 @@ function App() {
           <section>
             <Work />
             <Skills />
+            <Conferences />
             <Projects />
           </section>
         </div>
