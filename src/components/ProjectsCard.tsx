@@ -22,7 +22,7 @@ function ProjectsCard() {
     >
       <ul className="m-4 flex flex-col gap-4">
         <ListItemCard
-          title="Physical Location Personel Management System Dashboard"
+          title="SurePass - Physical Location Personel Management System Dashboard"
           subtitle="TypeScript, React, MUI, Vite, Axios, Zod, Sentry, React Testing Library, Playwright"
         >
           <p className="my-2 text-lg">
@@ -36,7 +36,7 @@ function ProjectsCard() {
           </p>
         </ListItemCard>
         <ListItemCard
-          title="Insurance Mental Health Provider Finder"
+          title="BCBS - Insurance Mental Health Provider Finder"
           subtitle="React, MUI, Node, Express, Objection.js, Sequelize, MSSQL, MapBox, Mocha, Chai, React Testing Library"
         >
           {" "}
@@ -63,7 +63,7 @@ function ProjectsCard() {
           </p>
         </ListItemCard>
         <ListItemCard
-          title="Higher Education Career Finder and College Readiness Tracker"
+          title="ASU - Higher Education Career Finder and College Readiness Tracker"
           subtitle="React, JSS, Node, TypeScript, Express, Objection.js, Sequelize, PostgreSQL, Cypress, Mocha, Chai, AWS Ecosystem, AWS Cognito"
         >
           <p className="my-2 text-lg">
@@ -87,7 +87,7 @@ function ProjectsCard() {
           </p>
         </ListItemCard>
         <ListItemCard
-          title="Law Enforcement and Prosecution Visualization and Charting"
+          title="PenLink - Law Enforcement and Prosecution Visualization and Charting"
           subtitle="Vue, Vuex, D3, Serverless, Vue Test Utils, AWS Ecosystem"
         >
           {" "}
@@ -105,7 +105,7 @@ function ProjectsCard() {
           </p>
         </ListItemCard>
         <ListItemCard
-          title="Building Efficiency Graphing Tool"
+          title="NREL - Building Efficiency Graphing Tool"
           subtitle="Vue, Vuex, D3, Karma"
         >
           {" "}
