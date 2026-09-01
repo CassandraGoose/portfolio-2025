@@ -22,7 +22,7 @@ function EducationCard() {
         <ul className="m-4 list-none flex flex-col gap-4">
           <ListItemCard
             title="B.S. in Software Engineering"
-            subtitle="Western Governor's University, 2025-2026"
+            subtitle="Western Governor's University"
           >
             <p>
               Regardless of my work history, hiring someone without a technical
@@ -36,7 +36,7 @@ function EducationCard() {
           </ListItemCard>
           <ListItemCard
             title="Web Development Certificate"
-            subtitle="Galvanize - Web Development Immersive, 2016-2017"
+            subtitle="Galvanize - Web Development Immersive"
           >
             <p>
               I spent six months actively learning with peers covering
