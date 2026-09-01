@@ -15,20 +15,28 @@ function AboutCard() {
       <div>
         <p className="m-4">
           After nearly a decade of building applications, primarily for the web,
-          I realized that I have all the knowledge and skill I need in order to
-          secure those applications. I have shifted my mindset from "move fast
-          and break things", to "how might someone else break this?". I spent
-          years reviewing code for vulnerabilities, writing reports regarding
-          security for stakeholders, and weighing risks, but never put a name
-          to that drive and always worked within my title of web developer or
-          software developer. Now, I'm aiming to lead the charge on a team as an
-          Application Security Engineer.
+          I realized that it was time to focus on securing applications. I have
+          shifted my mindset from "move fast and break things", to "how might
+          someone else break this?". I spent years reviewing code for
+          vulnerabilities, writing security reports for stakeholders,
+          and weighing risks, but never put a name to those tasks; I always
+          worked within my title of web developer or software developer. Now,
+          I'm aiming to focus my work on a team team as an Application Security
+          Engineer.
         </p>
         <div className="flex pt-4 pb-8">
-          <LinkButton href="https://github.com/CassandraGoose" external className="ml-4">
+          <LinkButton
+            href="https://github.com/CassandraGoose"
+            external
+            className="ml-4"
+          >
             GitHub
           </LinkButton>
-          <LinkButton href="https://www.linkedin.com/in/cassandra-rt/" external className="ml-4">
+          <LinkButton
+            href="https://www.linkedin.com/in/cassandra-rt/"
+            external
+            className="ml-4"
+          >
             LinkedIn
           </LinkButton>
         </div>
