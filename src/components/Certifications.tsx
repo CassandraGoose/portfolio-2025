@@ -23,11 +23,11 @@ function EducationCard() {
           <li className="ml-4 mb-4">
             <p className="italic">CompTIA Security+</p>
           </li>
-          <li className="ml-4 mb-4">
+          {/* <li className="ml-4 mb-4">
             <p className="italic">
               Certified Web Exploitation Specialist (HTB)
             </p>
-          </li>
+          </li> */}
           <li className="ml-4 mb-4">
             <p className="italic">AWS Certified Cloud Practicitioner</p>
           </li>
