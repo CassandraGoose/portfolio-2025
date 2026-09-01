@@ -67,9 +67,14 @@ function SkillsCard() {
   return (
     <Card
       nav={
-        <p className="border-l-4 border-solid border-black justify-center px-4 flex items-center">
-          TOOLS/SKILLS/PRACTICES
+        <>
+        <p className="border-l-4 border-solid border-black justify-center px-4 items-center hidden md:flex">
+          TOOLS / SKILLS / PRACTICES
         </p>
+        <p className="border-l-4 border-solid border-black justify-center px-4 items-center flex md:hidden">
+          TOOLS & SKILLS
+        </p>
+        </>
       }
       id="skills"
     >

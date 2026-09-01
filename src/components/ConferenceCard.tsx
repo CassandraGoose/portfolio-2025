@@ -5,9 +5,14 @@ function CommunityCard() {
   return (
     <Card
       nav={
-        <p className="border-l-4 border-solid border-black justify-center px-4 flex items-center">
+        <>
+        <p className="border-l-4 border-solid border-black justify-center px-4 items-center hidden lg:flex">
           CONFERENCES / CONVENTIONS / MEETUPS / ETC
         </p>
+        <p className="border-l-4 border-solid border-black justify-center px-4 flex items-center flex lg:hidden">
+          CONS & MEETUPS
+        </p>
+        </>
       }
       id="community"
       context={""}

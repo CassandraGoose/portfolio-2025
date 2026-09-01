@@ -6,9 +6,14 @@ function ProjectsCard() {
   return (
     <Card
       nav={
-        <p className="border-l-4 border-solid border-black justify-center px-4 flex items-center">
+        <>
+        <p className="border-l-4 border-solid border-black justify-center px-4 items-center hidden md:flex">
           PRODUCTION APPLICATIONS
         </p>
+         <p className="border-l-4 border-solid border-black justify-center px-4 items-center flex md:hidden">
+          PROD APPLICATIONS
+        </p>
+        </>
       }
       id="pro"
       context={

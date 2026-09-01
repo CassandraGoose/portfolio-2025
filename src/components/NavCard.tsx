@@ -1,12 +1,12 @@
 import Card from './Card'
 import LinkButton from './LinkButton'
 
-function IntroCard() {
+function NavCard() {
   return (
     <Card
       nav={
         <p className='border-l-4 border-solid border-black justify-center px-4 flex items-center'>
-          
+          HI!
         </p>
       }
       id="nav"
@@ -29,4 +29,4 @@ function IntroCard() {
   )
 }
 
-export default IntroCard
+export default NavCard

@@ -14,7 +14,7 @@ import Volunteering from "./components/VolunteeringCard";
 function App() {
   return (
     <>
-      <div className="lg:mx-16 text-xl">
+      <div className="lg:mx-16 text-xl relative z-50">
         <NavCard />
       </div>
       <main className="grid md:grid-cols-2 text-xl lg:mx-16 relative z-50">
