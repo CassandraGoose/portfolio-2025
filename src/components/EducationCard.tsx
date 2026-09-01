@@ -48,7 +48,7 @@ function EducationCard() {
           </ListItemCard>
           <ListItemCard
             title="Bachelor of Music Education"
-            subtitle="University of Northern Colorado, 2009-2014"
+            subtitle="University of Northern Colorado"
           >
             <p>
               I graduated with highest honors and landed on the Dean's List
