@@ -6,21 +6,21 @@ function CommunityCard() {
     <Card
       nav={
         <p className="border-l-4 border-solid border-black justify-center px-4 flex items-center">
-          CONFERENCES
+          CONFERENCES / CONVENTIONS / MEETUPS / ETC
         </p>
       }
       id="community"
       context={""}
     >
       <div className="m-4 list-disc">
-        <p className="font-bold">Conferences Attended</p>
+        <p className="font-bold">Conferences & Conventions Attended</p>
         <ul className="list-disc m-4">
           <li className="ml-4 mb-4">
             <p className="italic">DEF CON, 2026</p>
             <p className="text-lg">
-              World's largest and oldest annual hacking & cybersecurity
-              convention. The con includes multiple tracks with talks, villages
-              with interactive zones and workshops, and competitions.
+              Annual hacking & cybersecurity convention. The con includes
+              multiple tracks with talks, villages with interactive zones and
+              workshops, and competitions.
             </p>
           </li>
           <li className="ml-4 mb-4">
@@ -51,6 +51,18 @@ function CommunityCard() {
             <p className="text-lg">
               A 2 day, in-person, multi-track development and design conference
             </p>
+          </li>
+        </ul>
+        <p className="font-bold">Meetups Attended</p>
+        <ul className="list-disc m-4">
+          <li className="ml-4 mb-4">
+            <p className="italic">DenverScript 2016-2026</p>
+          </li>
+          <li className="ml-4 mb-4">
+            <p className="italic">Develop Happy Hour 2017-2026</p>
+          </li>
+          <li className="ml-4 mb-4">
+            <p className="italic">React Denver 2022-2025</p>
           </li>
         </ul>
       </div>
