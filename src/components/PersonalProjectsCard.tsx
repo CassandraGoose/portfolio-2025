@@ -32,7 +32,7 @@ function PersonalProjectsCard() {
             explore their notes via a node graph. 
           </p>
           <p className="my-2 text-lg">
-            I added static testing into the CI/CD pipeline and encrypted the database at rest. I also crafted a security report on the project.
+            I added static application testing into the CI/CD pipeline and added a threat model document. Soon, the application will include other security features! Stay tuned!
           </p>
           <div className="flex pt-4 pb-8">
             <LinkButton
@@ -71,25 +71,6 @@ function PersonalProjectsCard() {
             >
               Code
             </LinkButton>
-          </div>
-        </ListItemCard>
-        <ListItemCard
-          title="Custom Metal Creations (Portfolio Site for Local Artist)"
-          subtitle="Vue, Tailwind, Vite, JavaScript, HTML, Vercel, Google Visutalization API, Google Sheets"
-        >
-          <p className="my-2 text-lg">
-            This site was a portfolio site for the metal artist Terry Lawrenz. I
-            made some interesting choices here, so that the artist could easily
-            make updates with technology he was already comfortable using. For
-            example, instead of utilizing a CMS or a database, I have data
-            coming in from a Google Sheet. I'm hoping to improve the Largest
-            Contentful Paint, compress images, and generally improve the
-            performance of the application in the future.
-          </p>
-          <div className="flex pt-4 pb-8 text-lg">
-            This site is no longer maintained, after the passing of the artist.
-            I'd love to redeploy it in the future with modifications and
-            alternative data handling so that it can act as a memorial.
           </div>
         </ListItemCard>
         <ListItemCard
