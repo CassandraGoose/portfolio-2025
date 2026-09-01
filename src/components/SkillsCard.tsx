@@ -61,7 +61,7 @@ const PROGRAMMING_TOOLS_SKILLS = [
 
 const TECHNIQUE_SKILLS = ["Agile", "Pair Programming", "Governance & Management"];
 
-const SECURITY_SKILLS = ['General Security Practices (CompTIA Security+ Certification)', 'SAST', 'DAST', 'Threat Modeling', 'Web Exploitation (CWES Certified)', 'Burp Suite', 'Linux', 'OWASP ZAP'];
+const SECURITY_SKILLS = ['General Security Practices (CompTIA Security+ Certification)', 'SAST', 'DAST', 'Threat Modeling', 'More coming soon!'];
 
 function SkillsCard() {
   return (
